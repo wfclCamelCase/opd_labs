@@ -77,7 +77,7 @@ cd ..
 # LINKS & COPIES
 
 chmod u+w ~/lab0/lombre
-ln -hf ~/lab0/totodile ~/lab0/lombre/nidokingtotodile
+ln -f ~/lab0/totodile ~/lab0/lombre/nidokingtotodile
 chmod u-w ~/lab0/lombre
 
 ln -sf ~/lab0/seadra ~/lab0/Copy_10
