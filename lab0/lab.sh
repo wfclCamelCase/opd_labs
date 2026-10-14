@@ -106,19 +106,28 @@ chmod u+w ~/lab0/lombre
 cat ~/lab0/totodile > ~/lab0/lombre/aipomtotodile
 chmod u-w ~/lab0/lombre
 
+echo ===3===
+ls -lR
+
 # FIND & FILTER
 touch /tmp/559062
 
+echo ===4.1===
 ( wc -m < misdreavus >> misdreavus ) 2>/tmp/559062
 
+echo ===4.2===
 ls -R seadra 2>/dev/null | sort
 
+echo ===4.3===
 grep -r --include='p*' '' ~/lab0 2>>/tmp/559062 | sort -r
 
+echo ===4.4===
 grep -rn --include='*y' '' ~/lab0 2>&1 | sort
 
+echo ===4.5===
 ls -lR ~/lab0 2>&1 | grep '^[-dl]' | sort -k5 -nr | head -n 3
 
+echo ===4.6===
 cat misdreavus 2>>/tmp/559062 | grep -i 'ce'
 
 # REMOVAL
